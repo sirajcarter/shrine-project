@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+      <body>
+        <a-scene>
+
+    
+    <a-assets>
+      <asset-item id="shrine" src="models/campsite/model.gltf">
+      <asset-item id="sword" src="models/swordstone/model.gltf">
+      <asset-item id="ground" src="models/ground/model.gltf">
+      <asset-item id="bench" src="models/bench/model.gltf">
+      <img src="images/forest.jpg" id="shrinesky">
+      
+    </a-assets>
+       
+<a-entity id="shrine">
+
+        <a-entity gltf-model="#shrine" scale="2 2 2">
+        
+      </a-entity>
+    
+      <a-entity gltf-model="#sword" position="-0.5 0.5 -2"></a-entity>
+</a-entity>
+
+
+      <a-entity gltf-model="#bench" position="0 -1 3" scale="1.25 1.25 1.25"></a-entity>
+      <a-entity gltf-model="#ground" position="4 -28.5 11" scale="25 25 35" ></a-entity>
+
+      <a-sky src="#shrinesky"></a-sky>
+      <a-light type="point" color="gold" position="0 3 0" ></a-light>
+     
+
+    </a-scene>
+  </body>
+</html>
+
